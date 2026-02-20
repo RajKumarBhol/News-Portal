@@ -2,28 +2,31 @@ const Navbar = ({ setCategory }) => {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
+        <nav className="navbar navbar-expand-lg premium-navbar" data-bs-theme="dark">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#"><span className="badge bg-light text-dark fs-4">News-portal</span></a>
+            <a className="navbar-brand premium-brand" href="#">
+              <span className="badge bg-light text-dark fs-4 rounded-3 shadow-sm" style={{background: 'linear-gradient(135deg, #fff, #f8f9fa)'}}>Stellar</span>
+              <span className="text-light">News</span>
+            </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav ms-auto gap-2">
                 <li className="nav-item">
-                  <div className="nav-link" role="button" onClick={() => setCategory('technology')}>Technology</div>
+                  <div className="nav-link premium-nav-link" role="button" onClick={() => setCategory('technology')}>Technology</div>
                 </li>
                 <li className="nav-item">
-                  <div className="nav-link" role="button" onClick={() => setCategory('business')}>Business</div>
+                  <div className="nav-link premium-nav-link" role="button" onClick={() => setCategory('business')}>Business</div>
                 </li>
                 <li className="nav-item">
-                  <div className="nav-link" role="button" onClick={() => setCategory('health')}>Health</div>
+                  <div className="nav-link premium-nav-link" role="button" onClick={() => setCategory('health')}>Health</div>
                 </li>
                 <li className="nav-item">
-                  <div className="nav-link" role="button" onClick={() => setCategory('sports')}>Sports</div>
+                  <div className="nav-link premium-nav-link" role="button" onClick={() => setCategory('sports')}>Sports</div>
                 </li>
                 <li className="nav-item">
-                  <div className="nav-link" role="button" onClick={() => setCategory('entertainment')}>Entertainment</div>
+                  <div className="nav-link premium-nav-link" role="button" onClick={() => setCategory('entertainment')}>Entertainment</div>
                 </li>
               </ul>
             </div>
